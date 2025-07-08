@@ -1,0 +1,77 @@
+.hero-text {
+    animation-name: fadeInAnime;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnime{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ===== PORTFOLIO animation ===== */
+.cursor {
+  display: inline-block;
+  color: #333;
+  font-weight: bold;
+  animation: blinkCursor 1s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing {
+  font-family: monospace;
+  white-space: nowrap;
+}
+
+/* ===== リンクのホバー ===== */
+.animation-button {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.animation-button:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* ===== SKILLS フェードインアニメーション ===== */
+.skill-fade {
+  opacity: 0;
+  transform: translateY(30px);  /* 下から登場 */
+  transition: all 0.6s ease;
+}
+
+.skill-fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== WORKS ホバー時にズーム ===== */
+.work-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== WORKS 下からスライドイン表示（初期状態） ===== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKARI KOISO PORTFOLIO</title>
+    <script src="https://kit.fontawesome.com/92f6eae572.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="splash">
+    <div id="splash-text"></div>
+    <!-- /splash --></div>
+    
+    <div id="container">
+    <header>
+        <nav class="header-link">
+            <ul>
+                <li><a href="#home" class="animation-button">HOME</a></li>
+                <li><a href="#about-me" class="animation-button">ABOUT ME</a></li>
+                <li><a href="#skills" class="animation-button">SKILLS</a></li>
+                <li><a href="#works" class="animation-button">WORKS</a></li>
+                <li><a href="#contact" class="animation-button">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>AKARI KOISO</h1>
+            <p class="subtitle">
+                <span id="portfolio-text" class="typing"></span>
+                <span class="cursor">|</span>
+            </p>
+        </div>
+        <p id="next-content">
+            <a href="#about-this-site" class="animation-button">
+                <i class="fa-solid fa-chevron-down fa-2xl" style="color: #030303;"></i>
+            </a>
+        </p>
+    </header>
+
+    <!-- ===== ABOUT THIS SITE ===== --> 
+    <section id="about-this-site" class="center-section">
+        <h2 id="home">ABOUT THIS SITE</h2>
+        <p>ようこそ！</p>
+        <p>ここはAKARI KOISOのポートフォリオサイトです。<br>
+            これまでの作品やスキルを紹介しています。<br>
+            是非あなたに私のことを知ってほしいです。<br>
+            まだまだ成長過程ですがどうぞ温かく見守っていただけると嬉しいですm(__)m
+        </p>
+    </section>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section id="about-me" class="center-section">
+        <h2>ABOUT ME</h2>
+        <img src="assets/profile.png" alt="profile" class="profile-icon">
+        <p>静岡県出身の大学生。情報系の学部に在籍し、<br>
+            3年次から人工知能の応用をテーマとする研究室に所属。<br>
+            現在は配属直後のため、アルゴリズムの構造や数理的背景の学習を進めつつ、<br>
+            研究テーマの選定を進めている段階です。<br>
+            技術の力で人の感情や創造性に働きかける演出・体験を支えたい。<br>
+            そんな思いで日々学習に取り組んでいます。<br><br>
+
+            趣味はダンス、読書、英語学習。
+        </p>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <div class="skills-wrapper">
+            <h2>SKILLS</h2>
+            <h3>FRONT-END</h3>
+
+            <div class="skill-list skill-fade">
+                <img src="assets/icons8-html-5-50.png" alt="html">
+                <div class="skill-text">
+                    <p><strong>HTML</strong></p>
+                    <p>★★★☆☆</p>
+                    <p>現在Webページ制作会社にてアルバイトとしてコーディング業務を担当しています。</p>
+                </div>
+            </div>
+            <div class="skill-list skill-fade">
+                <img src="assets/icons8-cssロゴ-50.png" alt="css">
+                <div class="skill-text">
+                    <p><strong>CSS</strong></p>
+                    <p>★★☆☆☆</p>
+                    <p>現在Webページ制作会社にてアルバイトとしてコーディング業務を担当しています。</p>
+                </div>
+            </div>
+            <div class="skill-list skill-fade">
+                <img src="assets/icons8-javascriptのロゴ-50.png" alt="javascript">
+                <div class="skill-text">
+                    <p><strong>JavaScript</strong></p>
+                    <p>★☆☆☆☆</p>
+                    <p>現在Webページ制作会社にてアルバイトとしてコーディング業務を担当しています。</p>
+                </div>
+            </div>
+
+            <h3>BACK-END</h3>
+
+            <div class="skill-list skill-fade">
+                <img src="assets/icons8-python-50.png" alt="python">
+                <div class="skill-text">
+                    <p><strong>Python</strong></p>
+                    <p>★☆☆☆☆</p>
+                    <p>絶賛独学中です。</p>
+                </div>
+            </div>
+
+            <h3>LANGUAGE</h3>
+
+            <div class="skill-list skill-fade">
+                <img src="assets/icons8-翻訳-50.png" alt="english">
+                <div class="skill-text">
+                    <p><strong>英語</strong></p>
+                    <p>★★★★☆</p>
+                    <p>TOEIC 780点・英検準1級取得。オーストラリア留学経験あり。日常会話の対応可能です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WORKS ===== -->
+    <section id="works" class="center-section">
+        <h2>WORKS</h2>
+        <p>
+            制作経験はまだ少ないですが、今後さらに充実させていきます！m(__)m
+        </p>
+        <div class="works-grid">
+            <!-- カード1 -->
+            <div class="work-card fade-up" data-index="0">
+                <img src="assets/works-site.png" alt="site">
+                <h3>Portfolio Site</h3>
+                <p>AKARI KOISOのポートフォリオサイトです。<br>現在のスキルなどをまとめています。<br><br></p>
+                <p><small>使用言語 : HTML / CSS / JavaScript</small></p>
+            </div>
+            <!-- カード2 -->
+            <div class="work-card fade-up" data-index="1">
+                <img src="assets/works-robot1.png" alt="robot">
+                <h3>Hello, Robot!</h3>
+                <p>OpenGLとGLUTを用いて、<br>ロボットが3D空間内でランダムに<br>歩行・挨拶・表情変化をするプログラムです。</p>
+                <p><small>使用言語 : C / C++ / OpenGL / GLUT</small></p>
+            </div>
+            <!-- カード3 -->
+            <div class="work-card fade-up" data-index="2">
+                <img src="assets/works-GPA.png" alt="gpa">
+                <h3>SmartGPA</h3>
+                <p>学内学生向けに開発しました。<br>学生のGPA・単位・成績・順位を自動集計して<br>表示する成績管理ツールです。</p>
+                <p><small>使用言語 : Python / SQLite / Flask</small></p>
+            </div>
+        </div>
+
+        <!-- モーダル -->
+        <div class="modal" id="work-modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img id="modal-img" src="" alt="">
+                <div class="modal-text-block">
+                    <h3 id="modal-title"></h3> <!-- ←ここを外に出す -->
+                    <div id="modal-text" class="modal-text"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="center-section">
+        <div class="contact-box">
+            <h2>CONTACT</h2>
+            <p><small>お問い合わせ</small></p>
+            <p>
+                下記メールアドレスまたはInstagramのDMにてご連絡をお願いいたします。
+            </p>
+            <address><strong>Email : </strong>akaline111@gmail.com</address>
+            <a href="https://www.instagram.com/an_pan__.01?igsh=MWgxZmM2dm8weWxnZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="animation-button">
+                <i class="fa-brands fa-instagram fa-2xl" style="color: #2e3033;"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== APPRICIATION ===== -->
+    <section class="thank center-section">
+        <h1>Thank you for coming!!</h1>
+        <p>最後までご覧いただきありがとうございました。<br>
+            このサイトを通じて少しでも私自身を知っていただけたのなら嬉しいです。</p>
+        
+        <p>エンタメとテクノロジーの融合に魅了され、<br>
+            言葉を奪われるような経験をしたあの日の衝撃が、<br>
+            私の原点です。</p>
+    
+        <p>今後は消費者ではなく、<br>
+            創る側として体験価値を届けるエンジニアになりたい。<br>
+            そうした研究に挑戦していきたいという思いがあります。<br>
+            まだまだ至らない点は多いですが、日々精進してまいります。
+        </p>
+        <p id="page-top" class="animation-button">
+            <a href="#">
+            <i class="fa-solid fa-angle-up fa-2xl" style="color: #333;"></i>
+            </a>
+        </p>   
+    </section> 
+    <footer>
+        <nav class="footer-link">
+            <ul>
+                <li><a href="#home" class="animation-button">HOME</a></li>
+                <li><a href="#about" class="animation-button">ABOUT ME</a></li>
+                <li><a href="#skills" class="animation-button">SKILLS</a></li>
+                <li><a href="#works" class="animation-button">WORKS</a></li>
+                <li><a href="#contact" class="animation-button">CONTACT</a></li>
+            </ul>
+        </nav>
+<!--
+        <small>
+            <p>
+            使用しているアイコン素材：</p>
+            <ul>
+                <li>
+                    <p>
+                        <a target="_blank" href="https://icons8.com/icon/23028/html-5">HTML 5</a> アイコン by 
+                        <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="https://icons8.com/icon/38272/css3">CSSロゴ</a> アイコン by
+                        <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="https://icons8.com/icon/106036/javascript-logo">JavaScriptのロゴ</a> アイコン by 
+                        <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="https://icons8.com/icon/12592/python">Python</a> アイコン by 
+                        <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a target="_blank" href="https://icons8.com/icon/10739/translation">翻訳</a> アイコン by 
+                        <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </p>
+                </li>
+            </ul>
+        </small>
+
+-->
+        
+        <p><small>&copy; 2025 Akari Koiso</small></p>
+    </footer>
+
+    <!-- ===== jQuery ===== -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- ===== 自作 ===== -->
+     <script src="script.js"></script>
+    <!-- /container --></div>
+</body>
+</html>

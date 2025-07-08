@@ -1,0 +1,417 @@
+@charset "UTF-8";
+
+/* ===== ローディング画面 ===== */
+#splash {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    color: #333;
+}
+
+/* ===== ローディングバー　配置 ===== */
+#splash-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/* ===== 背景 ===== */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* 背景にする */
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+}
+
+/* ===== 全体の設定 ===== */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.center-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/* ===== ヘッダー ===== */
+header {
+    height: 100vh; 
+    background-color: #f9f9f9;
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 縦方向中央揃え */
+    align-items: center;     /* 横方向中央揃え */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero-text h1 {
+    font-size: 3rem; 
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #777;
+    margin-top: -10px;
+}
+
+/* ===== ABOUT THIS SITE ===== */
+
+/* ===== ABOUT ME ===== */
+#about-me {
+    height: 100vh; /* ウィンドウ全体の高さを使う */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+    padding: 0px;          
+}
+
+.profile-icon {
+  width: 120px; 
+  height: 120px;
+  border-radius: 50%;   /* 丸くする */
+  object-position: center 1%;
+  object-fit: cover;    /* はみ出さず中央表示 */
+  margin-bottom: 20px;  /* テキストとの余白 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* ほんのり影 */
+}
+
+
+/* ===== skill ===== */
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.skills-wrapper {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.skills-wrapper h2,
+.skills-wrapper h3 {
+    text-align: center;
+}
+
+.skill-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    text-align: left;
+    padding-left: 70px;
+}
+
+.skill-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 2px 0;
+}
+
+.skill-list img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+/* ===== WORKS ===== */
+#works {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 1200px;  
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+#works .work-card h3 {
+  font-size: 1.1rem; 
+  margin: 8px 0 4px;
+}
+
+#works .work-card p {
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+#works .work-card small {
+  color: #666;
+  font-size: 0.7rem;
+  display: block;
+  margin-top: 4px;
+}
+/*
+.works-grid {  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+  */
+.works-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+/*
+.work-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card img {
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+*/
+.work-card {
+  width: 300px;
+  border-radius: 0; /* 直角 */
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+/* モーダルウィンドウ */
+.modal {
+  display: none; /* 初期非表示 */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 0px;
+  max-width: 900px;
+  width: 95%;
+  position: relative;
+  text-align: left;
+}
+
+.modal-content img {
+  width: 35%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+.modal-text {
+  width: 55%;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.modal-text a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.modal-text-block {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+}
+
+
+/* ===== CONTACT ===== */
+.contact-box {
+    border: 2px solid #333;
+    padding: 40px 80px 70px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.fa-instagram {
+    margin-top: 50px;
+}
+
+
+/* ===== フッター ===== */
+
+footer {
+    background-color: #252525;
+    padding: 20px;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.footer-link ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .skill-list {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .close-btn {
+    top: 10px;
+    right: 10px;
+    z-index: 1001;
+  }
+
+  .modal-content img, .modal-text-block {
+    width: 100%;
+  }
+
+  .work-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .works-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
