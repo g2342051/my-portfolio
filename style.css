@@ -170,10 +170,11 @@ header ul li a {
     margin: 2px 0;
 }
 
-.skill-list img {
+.skill-list i {
+    font-size: 3rem;
     margin-right: 20px;
-    width: 50px;
-    height: 50px;
+    width: auto;
+    height: auto;
 }
 
 /* ===== WORKS ===== */
@@ -202,14 +203,7 @@ header ul li a {
   display: block;
   margin-top: 4px;
 }
-/*
-.works-grid {  
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 30px;
-}
-  */
+
 .works-grid {
   display: flex;
   flex-wrap: wrap;
@@ -218,25 +212,7 @@ header ul li a {
   align-items: flex-start;
   margin-top: 30px;
 }
-/*
-.work-card {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 0;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  cursor: pointer;
-  transform: scale(1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.work-card img {
-  width: 100%;
-  border-radius: 0;
-  margin-bottom: 10px;
-}
-*/
 .work-card {
   width: 300px;
   border-radius: 0; /* 直角 */

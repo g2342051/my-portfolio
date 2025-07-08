@@ -123,9 +123,17 @@ $(window).on('scroll', function () {
 // ===== モーダルポップアップ =====
 const workData = [
   {
-    img: "https://via.placeholder.com/600x400",
-    title: "作品タイトル 1",
-    text: "ここに作品の詳細説明を記述します。"
+    img: "assets/works-site.png",
+    title: "Portfolio Site",
+    text: `
+    <p>情報系大学生・小磯明莉のポートフォリオサイトです。<br>
+      自己紹介・スキル・制作物を1ページにまとめ、アニメーションやモーダルなどのインタラクティブな演出を取り入れています。<br><br>
+      HTML / CSS / JavaScript に加えて <strong>particles.js や progressbar.js</strong> を活用し、読み込み時のローディングアニメーションやスクロール演出も実装。<br>
+      今後はさらにレスポンシブ調整やアニメーション追加、フォーム機能の実装を予定しています。</p>
+    <a href="https://github.com/g2342051/my-portfolio" target="_blank" class="animation-button">
+      <i class="fa-brands fa-github fa-2xl" style="color: #030303;"></i>
+    </a>
+  `.trim()
   },
   {
     img: "assets/works-robot1.png",
