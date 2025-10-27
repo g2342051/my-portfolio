@@ -1,79 +1,13 @@
-@charset "UTF-8";
+/* ==================================
+   components.css
+   - Header / Nav
+   - Sections (About, Skills, Works, Contact)
+   - Modal
+   - Footer
+================================== */
 
-/* ===== ローディング画面 ===== */
-#splash {
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    text-align: center;
-    color: #333;
-}
-
-/* ===== ローディングバー　配置 ===== */
-#splash-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 999;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-}
-
-/* ===== 背景 ===== */
-#particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1; /* 背景にする */
-    width: 100%;
-    height: 100%;
-    background-color: #fff; 
-}
-
-/* ===== 全体の設定 ===== */
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-section {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.center-section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
-/* ===== ヘッダー ===== */
+/* HEADER / NAV
+---------------------------------- */
 header {
     height: 100vh; 
     background-color: #f9f9f9;
@@ -113,7 +47,8 @@ header ul li a {
 
 /* ===== ABOUT THIS SITE ===== */
 
-/* ===== ABOUT ME ===== */
+/* ABOUT ME 
+---------------------------------- */
 #about-me {
     height: 100vh; /* ウィンドウ全体の高さを使う */
     display: flex;
@@ -135,7 +70,8 @@ header ul li a {
 }
 
 
-/* ===== skill ===== */
+/* SKILLS 
+---------------------------------- */
 #skills {
     display: flex;
     justify-content: center;
@@ -177,7 +113,8 @@ header ul li a {
     height: auto;
 }
 
-/* ===== WORKS ===== */
+/* WORKS 
+---------------------------------- */
 #works {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -234,7 +171,10 @@ header ul li a {
 }
 
 
-/* モーダルウィンドウ */
+
+
+/* MODAL 
+---------------------------------- */
 .modal {
   display: none; /* 初期非表示 */
   position: fixed;
@@ -303,7 +243,8 @@ header ul li a {
 }
 
 
-/* ===== CONTACT ===== */
+/* CONTACT 
+---------------------------------- */
 .contact-box {
     border: 2px solid #333;
     padding: 40px 80px 70px;
@@ -316,8 +257,8 @@ header ul li a {
 }
 
 
-/* ===== フッター ===== */
-
+/* FOOTER 
+---------------------------------- */
 footer {
     background-color: #252525;
     padding: 20px;
@@ -340,54 +281,4 @@ footer ul li {
 footer a {
     color: #f9f9f9;
     text-decoration: none;
-}
-
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-
-  .subtitle {
-    font-size: 1.2rem;
-  }
-
-  .skill-list {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0;
-  }
-
-  .modal-content {
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .close-btn {
-    top: 10px;
-    right: 10px;
-    z-index: 1001;
-  }
-
-  .modal-content img, .modal-text-block {
-    width: 100%;
-  }
-
-  .work-card {
-    width: 90%;
-    max-width: 350px;
-  }
-
-  .works-grid {
-    flex-direction: column;
-    align-items: center;
-  }
 }

@@ -60,7 +60,11 @@ particlesJS("particles-js", {
   }
 });
 
-// ===== スムーススクロール =====
+// ============================ 
+
+// スムーススクロール
+
+// ============================
 $('#next-content a').click(function (e) {
     e.preventDefault(); // デフォルトのリンク動作を無効化
     const target = $($(this).attr('href')); // hrefで指定された要素を取得
@@ -91,7 +95,12 @@ $('a[href^="#"]').click(function (e) {
   $('html, body').animate({ scrollTop: position }, speed, 'swing');
 });
 
-// ===== skill-list のフェードイン処理 =====
+
+// ============================
+
+// skill-list のフェードイン処理
+
+// ============================
 function fadeInSkillList() {
   const skills = document.querySelectorAll('.skill-fade');
   const triggerBottom = window.innerHeight * 0.85;
@@ -107,7 +116,11 @@ function fadeInSkillList() {
 window.addEventListener('scroll', fadeInSkillList);
 window.addEventListener('load', fadeInSkillList); // 読み込み時にも実行
 
-// ===== スクロールで下からフェードイン =====
+// =========================== 
+
+// スクロールで下からフェードイン
+
+// ===========================
 $(window).on('scroll', function () {
   $('.fade-up').each(function () {
     const targetPos = $(this).offset().top;
@@ -120,10 +133,14 @@ $(window).on('scroll', function () {
   });
 });
 
-// ===== モーダルポップアップ =====
+// =========================
+
+// モーダルポップアップ
+
+// =========================
 const workData = [
   {
-    img: "assets/works-site.png",
+    img: "assets/images/works-site.png",
     title: "Portfolio Site",
     text: `
     <p>情報系大学生・小磯明莉のポートフォリオサイトです。<br>
@@ -136,7 +153,7 @@ const workData = [
   `.trim()
   },
   {
-    img: "assets/works-robot1.png",
+    img: "assets/images/works-robot1.png",
     title: "Hello, Robot!",
     text: `
     <p>本作品は、C++とOpenGL／GLUTを用いて制作した、インタラクティブな3Dロボットアニメーションです。
@@ -148,7 +165,7 @@ const workData = [
     `.trim()
   },
   {
-    img: "assets/works-GPA2.png",
+    img: "assets/images/works-gpa2.png",
     title: "smartGPA",
     text: `
     <p>大学の成績管理を効率化するWebアプリです。<br>
